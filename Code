@@ -1,0 +1,182 @@
+// Ruliam dos Santos de Oliveira, J1, Jogo de perguntas e respostas
+
+
+#include <iostream>
+#include <string>
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+#include <math.h>
+#include <windows.h>
+// #include <locale.h>  Não funcionou
+
+using namespace std;
+
+
+int main(){
+    char inicio;
+    char nome [40];
+    int pontos = 0;
+    int erros = 0;
+    char resp_1 = 'z';
+    char resp_2 = 'z';
+    char resp_3 = 'z';
+    char resp_4 = 'z';
+    char resp_5 = 'z';
+    // setlocale(LC_ALL,"Portuguese");  Está tudo sem acento, pq o comando não funcionou
+
+    string linha = "*-------------------------------------------------------------------------------*";
+    cout << linha <<endl;
+    cout << ("|                   Jogo de Perguntas e Respostas de Ruliam                     |\n");
+    cout << linha <<endl;
+
+    cout << "\nDigite seu nome" <<endl;
+    cin >> nome;
+    system("pause");
+    system ("cls");
+
+    cout << linha <<endl;
+    cout << ("|                                     Questao 1                                 |") <<endl;
+    cout << ("|                           Qual e a capital do Parana?                         |") <<endl;
+    cout << linha <<endl;
+    cout << endl;
+    cout << linha <<endl;
+
+    cout << ("| A) Joinville     | B) Curitiba       | C) Foz do Iguacu     | D) Brasilia     |") <<endl;
+    cout << linha << endl;
+    cout << "Escreva a letra correspondente" <<endl;
+    cin >> resp_1;
+        if((resp_1=='B')||(resp_1=='b')){
+                pontos++;
+                system("cls");
+                system("color a7");
+            cout << "Voce acertou, parabens!" <<endl;
+                system("pause");
+        }
+        else{
+            erros++;
+            system("cls");
+            system("color 47");
+            cout << "Voce errou, estude mais um pouco da proxima vez :)" <<endl;
+            system("pause");
+        }
+    system("cls");
+    system("color 07");
+    cout << linha <<endl;
+    cout <<"|                                     Questao 2                                 |" <<endl;
+    cout <<"|                                 Qual e o numero PI?                           |" <<endl;
+    cout << linha << endl;
+    cout << endl;
+
+    cout << linha << endl;
+    cout << "| A) 3,14          | B) 4,11            | C) 2,14            | D) 1,61          |" <<endl;
+    cout << linha <<endl;
+    cout << "Escreva a letra correspondente" <<endl;
+    cin >> resp_2;
+            if ((resp_2=='a')||(resp_2=='A')){
+                pontos++;
+                system("cls");
+                system("color a7");
+                    cout << "Voce acertou, parabens!" <<endl;
+                system("pause");
+        }
+            else{
+            erros++;
+            system("cls");
+            system("color 47");
+                cout << "Voce errou, estude mais um pouco da proxima vez :)" <<endl;
+            system("pause");
+        }
+    system("cls");
+    system("color 07");
+    cout<<linha<<endl;
+    cout<<"|                                  Questao 3                                    |" <<endl;
+    cout<<"|                               O camaleao e um:                                |" <<endl;
+    cout<<linha<<endl;
+    cout<<endl;
+
+    cout<<linha<<endl;
+    cout<<"| A) Anfibio       | B) Oviparo         | C) Mamifero        | D) Reptil        |"<<endl;
+    cout<<linha<<endl;
+    cout<<"Escreva a letra correspondente"<<endl;
+    cin >> resp_3;
+        if ((resp_3=='d')||(resp_3=='D')){
+            pontos++;
+            system("cls");
+            system("color a7");
+                cout << "Voce acertou, parabens!" <<endl;
+            system("pause");
+        }
+        else{
+            erros++;
+            system("cls");
+            system("color 47");
+                cout << "Voce errou, estude mais um pouco da proxima vez :)" <<endl;
+            system("pause");
+        }
+    system("cls");
+    system("color 07");
+    cout<<linha<<endl;
+    cout<<"|                                   Questao 4                                   |"<<endl;
+    cout<<"|                           Quem descobriu o Brasil?                            |"<<endl;
+    cout<<linha<<endl;
+    cout<<endl;
+
+    cout<<linha<<endl;
+    cout<<"| A) Pedro Alvares Cabral    | B) Dom Pedro II      | C) Napoleao Bonaparte     |"<<endl;
+    cout<<linha<<endl;
+    cout<<"Escreva a letra correspondente"<<endl;
+    cin >> resp_4;
+        if((resp_4=='a')||(resp_4=='A')){
+            pontos++;
+            system("cls");
+            system("color a7");
+                cout << "Voce acertou, parabens!" <<endl;
+            system("pause");
+        }
+        else{
+            erros++;
+            system("cls");
+            system("color 47");
+                cout << "Voce errou, estude mais um pouco da proxima vez :)" <<endl;
+            system("pause");
+        }
+    system("cls");
+    system("color 07");
+    cout<<linha<<endl;
+    cout<<"|                                   Questao 5                                   |"<<endl;
+    cout<<"|                    Em que ano comecou a Segunda Guerra Mundial                |"<<endl;
+    cout<<linha<<endl;
+    cout<<endl;
+
+    cout<<linha<<endl;
+    cout<<"| A) 1918           | B) 1945           | C) 1939           | D) 1914           |"<<endl;
+    cout<<linha<<endl;
+    cout<<"Escreva a letra correspondente"<<endl;
+    cin >> resp_5;
+        if((resp_5=='c')||(resp_4=='C')){
+            pontos++;
+            system("cls");
+            system("color a7");
+                cout << "Voce acertou, parabens!" <<endl;
+            system("pause");
+        }
+        else{
+            erros++;
+            system("cls");
+            system("color 47");
+                cout << "Voce errou, estude mais um pouco da proxima vez :)" <<endl;
+            system("pause");
+        }
+    system("cls");
+    system("color 07");
+    cout<<"*===========================*"<<endl;
+    cout<<"| Muito obrigado por jogar! |"<<endl;
+    cout<<"*===========================*"<<endl;
+
+    cout<<"Nome: "<<nome<<endl;
+    cout<<"Acertos: "<<pontos<<endl;
+    cout<<"Erros: "<<erros<<endl;
+    system("pause");
+}
+
